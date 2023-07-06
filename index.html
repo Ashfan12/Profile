@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="icon" href="./Pictures/avatar.png">
+</head>
+<body>
+  <div id="header">
+    <div class="container header-container">
+      <nav> 
+        <img src="Pictures/SLTR LOGO.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>  
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i> 
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>
+          Frontend Developer
+        </p>
+        <h1>
+          Hi, I'm <span>Ashfan</span> <br> Azmy from Sri Lanka 
+        </h1>
+        <a href="Pictures/Ashfan CV.pdf" download class="btn btn2 header-btn">Download CV</a>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------about---------------------->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Pictures/IMG_1384.jpeg">
+        </div>
+        <div class="about-col-2">
+           <h1 class="sub-title">About Me</h1>
+           <p>
+            A self improved beginner level developer and designer who is flexible to work with individuals and also in corperate world.
+           </p>
+
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+
+           <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Frontend Development</span><br>HTML, CSS, Javascript </li>
+              <li><span>Creative Designing</span><br>Adobe Photoshop, Adobe Illustrator</li>
+              <li><span>Video Editing</span><br>Adobe Premiere Pro</li>
+            </ul>
+           </div>
+
+           <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Frontend Development</span><br>No prior experience</li>
+              <li><span>Creative Designing</span><br>Dart Media Pvt Ltd (2022 - 2023)</li>
+              <!-- <li><span>Frontend</span><br>Designing Websites</li> -->
+            </ul>
+           </div>
+
+           <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Higher Diploma in Software Engineering (reading)</span><br>Wayamba University of Sri Lanka</li>
+              <li><span>Diploma in Information Technology (2022)</span><br>Esoft Metro Campus</li>
+              <li><span>GCE Ordinary Level (2020(2021))</span><br>Successfully completed with 6 passes</li>
+              <li><span>High School (2016 - 2020)</span><br>UMHAIHL, Turkey</li>
+            </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------Services-------------------->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <!--need to add relevemt icon from fontawesome.com-->
+          <h2>Web Designing</h2>
+          <p>
+            Customize your websites for business and personal uses 
+          </p>
+          <a href="#">Learn more</a>
+          
+        </div>
+        
+        <div>
+          <h2>Flyer Designing</h2>
+          <p>
+            Design Flyers and Posters for your businesses and for social media marketing 
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <h2>Video Editing</h2>
+          <p>
+            Customizable video editing for promo and intro videos etc
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------------Portfolio------------------------------------>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+
+        <div class="work">
+          <img src="Pictures/ticket.jpg">
+          <div class="layer">
+            <h3>Online Ticket booking Platform</h3>
+            <p>
+              In this website you can easily book your Bus & Train tickets within 2 minutes from anywhere anytime.
+            </p>
+            <a href="https://ashfan12.github.io/ticketlanka/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Pictures/online-shopping.webp">
+          <div class="layer">
+            <h3>Online Clothing Store</h3>
+            <p>
+              Simple E-commerce website built using HTML, CSS and Javascript
+            </p>
+            <a href="https://ashfan12.github.io/Clothing-Store/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Pictures/education.jpg">
+          <div class="layer">
+            <h3>Education website</h3>
+            <p>
+              Responsive education website built using HTML, CSS and Javascript 
+            </p>
+            <a href="https://ashfan12.github.io/Education-Website/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Pictures/travel.jpg">
+          <div class="layer">
+            <h3>Travel Website</h3>
+            <p>
+              Srilankaturkrehber is a responsive travel website built for businesses. website built using HTML and CSS
+            </p>
+            <a href="https://ashfan12.github.io/Travel-Website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Pictures/youtube.jpg">
+          <div class="layer">
+            <h3>Youtube Clone</h3>
+            <p>
+              Simply designed Youtube clone website built using HTML and CSS
+            </p>
+            <a href="https://yutoob-clone.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Pictures/college.jpeg">
+          <div class="layer">
+            <h3>College Website</h3>
+            <p>
+              Responsive College website built using HTML and CSS
+            </p>
+            <a href="https://ashfan12.github.io/college-website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="./work.html" class="btn">See More</a>
+  </div>
+
+  <!-------------------------------Contact------------------------------------>
+
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> ashfanazmy12@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-phone"></i> +94 78 383 3007</p>
+          <div class="social-icons">
+            <a href="https://github.com/Ashfan12"><i class="fa-brands fa-github"></i></a>
+            <!--<a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+            <a href="https://www.instagram.com/monkeymind_d/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Ashfan03360546"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ashfan-azmy-b5aa6a202/"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <a href="Pictures/Ashfan CV.pdf" download class="btn btn2">Download CV</a>
+        </div>  
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="06" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+            <span id="msg"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+    const tabLinks = document.getElementsByClassName('tab-links');
+    const tabContents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabName) {
+      for(tablink of tabLinks){
+        tablink.classList.remove('active-link');
+      }
+      for(tabcontent of tabContents){
+        tabcontent.classList.remove('active-tab');
+      }
+      event.currentTarget.classList.add('active-link')
+      document.getElementById(tabName).classList.add('active-tab')
+    }
+
+  </script>
+
+  <script>
+    const sideMenu = document.getElementById('sidemenu')
+
+    function openMenu(){
+      sideMenu.style.right = '0';
+    }
+    function closeMenu(){
+      sideMenu.style.right = '-200px';
+    }
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzGTpsD5tIOXOpxkZAYdHYNw5_LtUHTKieBxDwQs3beYkZVAHPI_a8aAsTUQSR4j56A/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = 'Message sent successfully'
+        setTimeout(function(){
+          msg.innerHTML = ''
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
